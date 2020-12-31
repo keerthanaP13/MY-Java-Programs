@@ -1,0 +1,14 @@
+import java.util.*;
+  import java.io.*;
+  
+  public class Main {
+    public static void main(String args[]) throws IOException {
+      
+      Scanner sc=new Scanner(System.in);
+      int n=sc.nextInt();
+      float f=sc.nextFloat();
+      char c=sc.next().charAt(0);
+      System.out.printf("%d$%.2f$%c",n,f,c);
+      
+    }
+  }
