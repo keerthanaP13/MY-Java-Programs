@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		int hours = 0;
+		int minutes = 0;
+		Scanner scan = new Scanner(System.in);
+		
+		int t = scan.nextInt();
+		while(t-->0){
+		  int hour=scan.nextInt();
+		  int minute=scan.nextInt();
+		
+			
+			int h = (hour * 360) / 12 + (minute * 360) / ( 12 * 60);
+			int m = (minute * 360) / (60);
+			
+			  int angle = Math.abs(h-m);
+			 if(angle > 180)
+			  {
+			  angle = 360-angle;
+			  }
+		
+			System.out.println(angle);
+		}
+		
+		
+	}
+}
